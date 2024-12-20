@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GE - My Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Greg Eastman - My Page</h1>
+    
+  </header>
+  
+  <main>
+    <section class="about-me">
+        <p>Welcome to my portfolio! Here’s a collection of my latest projects showcasing my work in web development, app creation, and football mapping. Explore my work below and feel free to connect with me on <a href="https://www.linkedin.com/in/greg-eastman-2703892b2/" target="_blank">LinkedIn</a>.</p>
+    </section>
+    <section class="photos">
+      <img src="image2.jpeg" alt="Project 1">
+      <img src="image1.jpeg" alt="Project 2">
+      <img src="image0.png" alt="Project 3">
+    </section>
+    
+    <section class="about-me">
+      <h2>About Me</h2>
+      <p>Hi, I am Greg Eastman, a university student at Plymouth studying mathematics and computer science. As a youth player, I played within Argyle's youth setup from U10 - U16 ages before being released and becoming a coach within Cornwall's COE and Elite Hub setups. Currently, I am also Youth Male and Boys Lead for Cornwall FA. Welcome to my personal space where I share my passion for web development, app creation, and football analysis. I’ve created a variety of projects that range from educational tools and e-commerce applications to insightful football maps. Each project represents my journey of learning, problem-solving, and pushing the boundaries of what’s possible with technology. Explore my work and get in touch if you have any questions or would like to collaborate!</p>
+    </section>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <section class="projects">
+      <div class="project">
+        <img src="Screenshot 2024-11-10 220714.png" alt="Footballing Demographic Report in Cornwall">
+        <h3>Footballing Demographic Report in Cornwall</h3>
+        <p>Explore this comprehensive analysis of youth and male football development in Cornwall. The report includes interactive maps, statistics, and hierarchical models to understand the footballing ecosystem from grassroots to professional academies. It highlights opportunities for improvement and equity in football accessibility across the region.</p>
+        <a href="https://gregeasts.github.io/thecornishfootballmap/" target="_blank">Check it out here</a>
+      </div>
+      
+      <div class="project">
+        <img src="Screenshot 2024-12-20 103942.png" alt="Flashcards App">
+        <h3>Flashcards App</h3>
+        <p>This flashcard revision app optimizes learning and retention with features like custom question creation, daily sets, consolidation sets, and performance tracking. Ideal for breaking down complex concepts, especially in mathematics, this app combines practicality with effective study strategies.</p>
+        <a href="https://gregeasts.github.io/Flashcards-App/Flashcard-WebApp/" target="_blank">Check it out here</a>
+      </div>
+      
+      <div class="project">
+        <img src="Screenshot 2024-09-05 002449.png" alt="Football Shirt Designer">
+        <h3>Football Shirt Designer</h3>
+        <p>Design your own 3D football kit with this app! Customize styles, colors, logos, and player details to create personalized kits. Ideal for sports enthusiasts looking to showcase their creativity and for teams wanting unique apparel for matches.</p>
+        <a href="https://gregeasts.github.io/Football-Shirt-Designer/" target="_blank">Check it out here</a>
+      </div>
+      
+
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 GE - My Projects</p>
+  </footer>
+
+  <!-- JavaScript for responsive design and interactive elements -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const projects = document.querySelectorAll('.project');
+
+      projects.forEach(project => {
+        project.addEventListener('click', function() {
+          window.location.href = project.querySelector('a').href;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

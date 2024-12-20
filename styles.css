@@ -1,0 +1,140 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8; /* Lighter background for a professional look */
+    color: #333; /* Bolder black text */
+  }
+  
+  header {
+    background-color: #76c893; /* Soft green header */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .photos img:first-of-type {
+    object-position: top; /* Crop from the top of the image */
+  }
+  .photos img {
+    border-radius: 8px;
+    
+    height: 370px;
+    width: 100%; /* Set max width to maintain uniform size */
+    object-fit: cover; /* Crop images to maintain aspect ratio */
+    object-position: middle; /* Crop from the top of the image */
+    
+    transition: transform 0.3s;
+  }
+  
+  
+  .photos img:hover {
+    transform: scale(1.1);
+  }
+  
+  .about-me {
+    background-color: #fff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .about-me p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px; /* Increased gap between projects for better separation */
+    padding: 0px;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .project {
+    background-color: #ffffff; /* Light grey for project boxes */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+    width: 100%; /* Ensure full clickable area */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    background-color: #e0f4db; /* Lighter background color on hover for interaction */
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+     /* Uniform size for images */
+  }
+  
+  .project h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .project p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .project a {
+    display: block;
+    margin-top: 10px;
+    color: #76c893; /* Soft green for links */
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #76c893; /* Soft green for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
